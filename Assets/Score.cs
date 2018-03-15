@@ -35,7 +35,8 @@ public class Score : MonoBehaviour {
             this.scoreText.GetComponent<Text>().text = "Score " + this.score + "pt";
         }
             //小さな星に当たった場合
-        else if (other.gameObject.tag == "SmallStarTag"){
+        else if (other.gameObject.tag == "SmallStarTag")
+        {
             this.score += 10;
             this.scoreText.GetComponent<Text>().text = "Score " + this.score + "pt";
             //大きな星に当たった場合
